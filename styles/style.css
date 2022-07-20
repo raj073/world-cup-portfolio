@@ -14,7 +14,7 @@ body {
     margin-left: 140px;
     margin-right: 139px;
     margin-top: 50px;
-    box-sizing: border-box;
+
 
 }
 
@@ -35,6 +35,13 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #FFFFFF;
+}
+
+.top-banner-title:hover {
+    background: linear-gradient(130deg, #503bff 0%, #8293ff 100%);
+    box-shadow: none;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 
 .top-banner-pgraph {
@@ -58,6 +65,10 @@ body {
     font-weight: 700;
 }
 
+.top-banner-button:hover {
+    background-color: #503bff;
+}
+
 .top-banner-image {
     justify-content: center;
 }
@@ -69,7 +80,6 @@ body {
 }
 
 #blogs {
-    border: 1px solid wheat;
     margin-top: 50px;
     margin-left: 140px;
     margin-right: 139px;
@@ -136,7 +146,7 @@ body {
     margin-left: 20px;
 }
 
-.right-side-blog-container {
+.right-side-blog {
     border: 1px solid beige;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -272,6 +282,7 @@ footer {
 
 .footer-bottom-social-icon {
     margin-top: 9px;
+    display: none;
 }
 
 .footer-bottom-social-icon i {
@@ -280,5 +291,79 @@ footer {
 }
 
 .footer-bottom-social-icon a {
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+
+/*-------------------
+Media Queries----- */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    #banner {
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .top-banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #blogs {
+        width: 100%;
+    }
+
+    .middle-blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .leftside-menu {
+        background: #FFFFFF;
+        padding-left: 100px;
+        margin-bottom: 19px;
+        margin-top: -50px;
+
+    }
+
+    .leftside-btn-empty {
+        border-radius: 7px;
+        border: none;
+        background-color: whitesmoke;
+    }
+
+    .leftside-btn-fill {
+        border: none;
+    }
+
+    .right-side-blogs {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 110px;
+        margin-bottom: 19px;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        width: auto;
+        padding: 10px 10px;
+        margin-top: 70px;
+        background-color: black;
+        text-align: center;
+        height: auto;
+    }
+
+    .footer-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-bottom-social-icon {
+        display: inline;
+    }
+
 }
