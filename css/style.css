@@ -50,11 +50,11 @@ Top Banner----- */
 }
 
 .header-image img:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    animation: marceloShake 0.5s;
+    animation-iteration-count: 5;
 }
 
-@keyframes shake {
+@keyframes marceloShake {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
     }
@@ -110,8 +110,15 @@ Top Banner----- */
     font-weight: 700;
 }
 
+.top-header-button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
 
-/* body part */
+
+/*--------- body style --------*/
+
+
 .leftside-container {
     display: flex;
     margin: 100px 140px 40px 140px;
@@ -161,7 +168,7 @@ Top Banner----- */
     color: white;
 }
 
-/* blogs styles  */
+/* middle blogs styles  */
 
 .blogs {
     display: grid;
@@ -203,7 +210,8 @@ Top Banner----- */
     margin-right: 0px;
 }
 
-/* match page style  */
+/* Upcoming Match Style */
+
 .matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -245,17 +253,23 @@ Top Banner----- */
     color: #ccc;
 }
 
+/* tablet view all button style */
+
 .view {
     align-items: center;
 }
 
 .view-button {
-    background-color: tomato;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
     color: white;
     display: none;
+    background-color: #DD0000;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 10px 8px;
+    font-weight: 700;
+    width: 160px;
+    height: 50px;
+    border: none;
 }
 
 
@@ -312,14 +326,13 @@ footer p {
 }
 
 
-/*------------------
-   Responsiveness
- -------------------*/
+/*-----   Responsiveness Website   -------------*/
 
 /* Small or Mobile Devices */
+
 @media only screen and (max-width: 687px) {
 
-    /* header style  */
+    /* top header style  */
     .top-banner {
         background-color: rgb(34, 58, 68);
         border-radius: 30px;
@@ -355,7 +368,9 @@ footer p {
         color: white;
     }
 
-    /* body part  */
+    /* --------body style ---------- */
+
+
     .leftside-container {
         display: flex;
         flex-direction: column;
@@ -380,6 +395,9 @@ footer p {
         border: 1.5px solid wheat;
         border-radius: 10px;
     }
+
+    /* --------blogs style ---------- */
+
 
     .blogs {
         display: grid;
@@ -416,7 +434,8 @@ footer p {
         margin: auto;
     }
 
-    /* footer part  */
+    /* ---------footer part -------------- */
+
     .footer-option-container {
         display: flex;
         flex-direction: column;
@@ -440,10 +459,13 @@ footer p {
 
 }
 
-/* Tablet Devices  */
+/* --------iPad mini or Tablet Devices --------- */
+
 @media only screen and (min-width: 688px) and (max-width: 991px) {
 
-    /* header part  */
+    /* --------top header style-------  */
+
+
     .top-header-text p {
         margin-top: 50px;
         color: rgb(183, 180, 180);
@@ -461,7 +483,8 @@ footer p {
         justify-content: center;
     }
 
-    /* body part  */
+    /* --------body style ---------- */
+
     .leftside-button-container {
         width: 500px;
         height: 100px;
@@ -474,6 +497,8 @@ footer p {
         align-items: center;
         flex-direction: row;
     }
+
+    /* --------left side button style ---------- */
 
     .side-button {
         height: 64px;
@@ -502,7 +527,7 @@ footer p {
     .side-button:hover {
         cursor: pointer;
         background-color: blueviolet;
-        color: black;
+        color: whitesmoke;
     }
 
     .selected-side-button {
@@ -530,7 +555,8 @@ footer p {
         display: block;
     }
 
-    /* footer part */
+    /* --------footer style---------- */
+
     .footer-option-container {
         display: flex;
         justify-content: center;
