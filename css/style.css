@@ -573,7 +573,9 @@ footer p {
 
     .tablet-view-button {
         margin-top: 40px;
-        display: block;
+        display: inline;
+        justify-content: center;
+        align-items: center;
     }
 
     /* --------footer style---------- */
